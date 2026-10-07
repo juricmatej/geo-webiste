@@ -1,16 +1,294 @@
 <!doctype html>
-<html lang="en">
+<html lang="sl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link  rel="stylesheet" href="/src/style.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>geo</title>
+    <title>Geodetske meritve Miroslav Jurić</title>
+    <script
+	src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+	async
+	defer
+></script>
+<script type="module" src="./src/main.ts"></script>
   </head>
-  <body>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  
-  </body>
+  <body class="bg-surface font-body text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="top-0  w-full z-50 bg-[#f4faff]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#003358]">
+                Geodetske meritve Miroslav Jurić
+            </div>
+
+</div>
+</nav>
+<main >
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden technical-grid">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl text-on-surface leading-[1.1] tracking-tight mb-8">
+                        Vaš partner za <br/><span class="text-primary">natančne meritve</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10">
+                        Ponujamo kakovostne geodetske storitve po vsej Sloveniji. Naše delo temelji na strokovnosti, natančnih meritvah in prilagojenem pristopu.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-headline font-bold flex items-center gap-3 hover:shadow-lg transition-all active:scale-95">
+                            Kontaktirajte nas
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-outline-variant/30 bg-surface-container-lowest/50 backdrop-blur-sm px-8 py-4 rounded-lg font-headline font-bold hover:bg-surface-container transition-all">
+                            Naše storitve
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-[500px] lg:h-[600px] w-full">
+<div class="absolute inset-0 bg-primary/5 rounded-xl border border-outline-variant/10 -rotate-3 translate-x-4"></div>
+<div class="absolute inset-0 bg-surface-container-lowest shadow-2xl rounded-xl overflow-hidden rotate-0 border border-outline-variant/15">
+<img alt="Modern Surveying Equipment" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrjIE37U-pJ5Yz6bc_mo764N91cBvw4bo0ekNb7FVHQtpcPMT5tGDwp2T6Ay6ZAMLy429fhdOPSGAIbxU6FZEO-K260FsZ8MyYjtwsSHPiB8d-5AhkC9YZV_Jl6p2M1Q82MCUJPFurt8GX21dRyzj52NMwiK3096JYBs2R5CwSwVecqqH0YgXYdyCgrKoMiIJHS77NwPVYU1fEqs4bgkfv_juqdyoQ77nSfbfxCrH_3ARiPJ_R6UQ3aEQxSqDdBJz1EB_fF4qp-ZM"/>
+<div class="absolute top-6 right-6 bg-surface-container-lowest/90 backdrop-blur-md p-4 rounded-lg border border-outline-variant/10">
+<div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-tighter mb-1">Koordinati [Novo mesto]</div>
+<div class="font-mono text-sm font-bold text-primary">45.8011° N, 15.1711° E</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section: Bento Grid -->
+<section class="py-24 bg-surface-container-low" id="storitve">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline font-bold text-3xl text-on-surface mb-2">Naše storitve</h2>
+<div class="h-1 w-24 bg-secondary"></div>
+</div>
+<p class="max-w-md text-on-surface-variant font-body">Zagotavljamo celovito podporo na področju geodezije za zasebne in poslovne naročnike.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+<!-- Ureditev meje -->
+<div class="md:col-span-3 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/5 shadow-sm group hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">layers</span>
+<h3 class="font-headline font-bold text-xl mb-4 text-on-surface">Ureditev meje</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Imate nejasno ali sporno mejo s sosedom? Poskrbite za natančno določitev meje vašega zemljišča z geodetskim postopkom ureditve meje.</p>
+<ul class="space-y-2 text-xs font-bold text-primary uppercase tracking-wider">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary"></span> Strokovna podpora</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary"></span> Vpis v kataster</li>
+</ul>
+</div>
+<!-- Parcelacija zemljišča -->
+<div class="md:col-span-3 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/5 shadow-sm group hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">straighten</span>
+<h3 class="font-headline font-bold text-xl mb-4 text-on-surface">Parcelacija zemljišča</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Uradni geodetski postopek, s katerim razdelimo obstoječo parcelo na dve ali več novih, ali združimo več parcel v eno.</p>
+<ul class="space-y-2 text-xs font-bold text-primary uppercase tracking-wider">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary"></span> Razdelitev parcel</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary"></span> Združitev zemljišč</li>
+</ul>
+</div>
+<!-- Izravnava meje -->
+<div class="md:col-span-2 bg-primary text-on-primary p-8 rounded-xl shadow-xl">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<h3 class="font-headline font-bold text-xl mb-4">Izravnava meje</h3>
+<p class="text-on-primary-container text-sm leading-relaxed">Prilagoditev meje med sosednjima parcelama za boljšo logiko uporabe brez večje spremembe površine.</p>
+</div>
+<!-- Vpis stavbe v kataster -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/5 shadow-sm relative overflow-hidden group hover:border-secondary transition-all">
+<div class="relative z-10 flex flex-col h-full justify-center">
+<h3 class="font-headline font-bold text-xl mb-4 text-on-surface">Vpis stavbe v kataster nepremičnin</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-lg mb-4">Vsaka stavba mora biti po zaključku gradnje vpisana v kataster, kar je pogoj za pridobitev hišne številke.</p>
+<a class="text-secondary font-bold text-sm inline-flex items-center gap-2 hover:gap-4 transition-all" href="#kontakt">Pošljite povpraševanje <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl text-surface-container opacity-50 group-hover:scale-110 transition-transform">description</span>
+</div>
+<!-- Zakoličba objekta -->
+<div class="md:col-span-3 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/5 shadow-sm group hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">location_on</span>
+<h3 class="font-headline font-bold text-xl mb-4 text-on-surface">Zakoličba objekta</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Obvezen postopek pred začetkom gradnje, kjer pooblaščeni geodet na terenu označi položaj objekta.</p>
+</div>
+<!-- Geodetski posnetek -->
+<div class="md:col-span-3 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/5 shadow-sm group hover:border-secondary transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">map</span>
+<h3 class="font-headline font-bold text-xl mb-4 text-on-surface">Geodetski posnetek</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Temelj vsakega projekta – natančen prikaz obstoječega stanja zemljišča za pripravo projektne dokumentacije.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 relative overflow-hidden" id="kdo-smo">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -left-4 top-0 w-1 h-full bg-secondary"></div>
+<h2 class="font-headline font-extrabold text-4xl text-on-surface mb-8">Kdo smo?</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">Naše delo temelji na strokovnosti, natančnih meritvah in prilagojenem pristopu k vsakemu projektu – ne glede na velikost.</p>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-xs flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg text-on-surface mb-2">Strokovnost</h4>
+<p class="text-on-surface-variant leading-relaxed">Dolgoletne izkušnje in nenehno izobraževanje na področju geodezije in nepremičninske zakonodaje.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-xs flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-lg text-on-surface mb-2">Natančnost</h4>
+<p class="text-on-surface-variant leading-relaxed">Uporaba najsodobnejših geodetskih instrumentov za zagotavljanje vrhunske natančnosti podatkov.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-surface-container rounded-xl h-72 overflow-hidden shadow-inner flex flex-col justify-end p-6 border border-outline-variant/10">
+<div class="text-4xl font-headline font-extrabold text-primary mb-2">25+</div>
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Let izkušenj</div>
+</div>
+<div class="bg-secondary-container rounded-xl h-72 overflow-hidden shadow-lg p-6 flex flex-col justify-between border-b-4 border-secondary/20">
+<span class="material-symbols-outlined text-on-secondary-container text-5xl">task_alt</span>
+<div>
+<div class="text-4xl font-headline font-extrabold text-on-secondary-container mb-2">100%</div>
+<div class="text-xs font-bold text-on-secondary-container uppercase tracking-widest">Zadovoljnih strank</div>
+</div>
+</div>
+<div class="col-span-2 bg-surface-container-high rounded-xl h-48 flex items-center justify-center border border-outline-variant/10 shadow-sm">
+<div class="text-center">
+<div class="text-3xl font-headline font-extrabold text-primary">Po celotni Sloveniji</div>
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Pokritost storitev</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Form Section -->
+<section class="py-24 bg-surface-container-lowest" id="kontakt">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-outline-variant/15">
+<div class="lg:w-1/3 bg-primary p-12 text-on-primary flex flex-col justify-between">
+<div>
+<h2 class="font-headline font-bold text-3xl mb-6" id="contact" >Kontakt</h2>
+<p class="text-on-primary-container mb-8">Pišite nam za informativno ponudbo ali vprašanje glede vašega projekta.</p>
+<div class="space-y-4 text-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">call</span>
+<span>+386 41 710 972</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container">mail</span>
+<span>miroslav.juric7@gmail.com</span>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-12 border-t border-on-primary/10">
+<div class="text-xs font-bold uppercase tracking-widest text-on-primary-container mb-2">Lokacija</div>
+<address class="not-italic text-sm text-on-primary-container">
+                                Ljubljanska cesta 26<br/>8000 Novo mesto
+                            </address>
+<div class="mt-4 text-xs text-on-primary-container opacity-80">
+                                Delovni čas: Pon-Pet 8:00-15:00
+                            </div>
+</div>
+</div>
+<div class="lg:w-2/3 p-12 bg-surface-container-lowest">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="ime">Ime in Priimek</label>
+<input name="imena" id="ime" class="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 transition-all" placeholder="Vnesite ime" type="text" required/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="email">E-pošta </label>
+<input name="mail" id="email" type="email" class="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 transition-all" placeholder="Vnestie e-pošto" type="text" required/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="storitev">Vrsta storitve</label>
+<select id="storitev" class="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 transition-all">
+<option>Ureditev meje</option>
+<option>Parcelacija zemljišča</option>
+<option>Vpis stavbe v kataster</option>
+<option>Zakoličba objekta</option>
+<option>Geodetski posnetek</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="location">Lokacija nepremičnine</label>
+<input name="lokacija" id="location" class="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 transition-all" placeholder="Kraj, občina" type="text" required/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-wider" for="opis">Opis vaših želja</label>
+<textarea name="description" id="opis" class="w-full bg-surface-container-high border-0 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 transition-all" placeholder="Opišite kaj potrebujete..." rows="4" required ></textarea>
+</div>
+<div class="pt-4">
+  <input type="text" name="phone_number" id="phone" class="phone_num" value="" />
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-headline font-extrabold text-lg hover:opacity-90 transition-all shadow-lg active:scale-[0.98]" type="submit">
+                                    Pošlji povpraševanje
+                                </button>
+
+
+                           
+</div>
+  <div class="pt-2 ">
+     <div class="cf-turnstile" data-sitekey="0x4AAAAAAFOTeFphif0Ic4fT" data-theme="light" ></div>
+     </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-[#e3f0f8] font-['Inter'] text-sm leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-extrabold text-[#003358] mb-6">
+                    Geodetske meritve Miroslav Jurić
+                </div>
+<p class="text-[#42474f] mb-6">
+                    Vaš partner za natančne geodetske meritve in strokovno svetovanje po vsej Sloveniji.
+                </p>
+</div>
+<div>
+<h5 class="font-headline font-bold text-[#003358] mb-6">Storitve</h5>
+<ul class="space-y-4">
+<li><a class="text-[#42474f] hover:text-[#feb700] transition-colors" href="#">Ureditev meje</a></li>
+<li><a class="text-[#42474f] hover:text-[#feb700] transition-colors" href="#">Parcelacija</a></li>
+<li><a class="text-[#42474f] hover:text-[#feb700] transition-colors" href="#">Vpis stavbe</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-[#003358] mb-6">Kontakt</h5>
+<ul class="space-y-4">
+<li class="text-[#42474f]">+386 41 710 972</li>
+<li class="text-[#42474f]">miroslav.juric7@gmail.com</li>
+<li class="text-[#42474f]">Ljubljanska cesta 26, Novo mesto</li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-[#003358] mb-6">Povežite se</h5>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#003358] cursor-pointer hover:text-[#feb700]">public</span>
+<span class="material-symbols-outlined text-[#003358] cursor-pointer hover:text-[#feb700]">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-[#003358]/10 text-center">
+<p class="text-[#42474f]">© <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script> Geodetske meritve Miroslav Jurić s.p. Vse pravice pridržane.</p>
+</div>
+</footer>
+</body>
 </html>

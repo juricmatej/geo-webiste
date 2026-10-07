@@ -52,6 +52,9 @@
   --font-headline: "Manrope", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-label: "Inter", sans-serif;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
 }
 
 .material-symbols-outlined {
@@ -65,4 +68,13 @@
 
 .asymmetric-clip {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+
+
+.phone_num {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
